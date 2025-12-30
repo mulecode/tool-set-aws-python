@@ -1,11 +1,11 @@
 FROM amazonlinux:2
 
 LABEL org.opencontainers.image.source="https://github.com/mulecode/tool-set-aws-python"
-LABEL org.opencontainers.image.description="Python 3.11.11 Tool-set"
+LABEL org.opencontainers.image.description="Python 3.14.2 Tool-set"
 
-ENV PYTHON_VERSION=3.11.11
-ENV BLACK_VERSION=25.1.0
-ENV PIP_VERSION=25.0.1
+ENV PYTHON_VERSION=3.14.2
+ENV BLACK_VERSION=25.12.0
+ENV PIP_VERSION=25.3
 
 WORKDIR /opt/app
 
