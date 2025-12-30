@@ -38,9 +38,7 @@ docker_tag: ## Push a new tag for the latest image
 .PHONY: docker_lint
 docker_lint: ## Link Dockerfile
 	cd ./docker/$(IMAGE) && \
-	docker run --rm -i \
-	  -v "$$PWD/.hadolint.yaml:/hadolint.yaml:ro" \
-	  ghcr.io/hadolint/hadolint:latest hadolint --config /hadolint.yaml - < Dockerfile
+	docker run --rm -i ghcr.io/hadolint/hadolint:latest < Dockerfile
 
 .PHONY: docker_vulnerability_scan
 docker_vulnerability_scan: ## Scan docker image for vulnerabilities

@@ -9,7 +9,7 @@ ENV PIP_VERSION=25.3
 
 WORKDIR /opt/app
 
-# Updates yum
+# hadolint ignore=DL3033
 RUN yum -y update && \
     yum -y upgrade && \
     yum -y install \
