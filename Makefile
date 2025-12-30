@@ -65,4 +65,3 @@ help: ## Display this help
 	  } /^##@/ { \
 	    printf "\n\033[1m%s\033[0m\n", substr($$0, 5) \
 	  } ' $(MAKEFILE_LIST)
-
