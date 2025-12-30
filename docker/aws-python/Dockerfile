@@ -1,4 +1,4 @@
-FROM amazonlinux:2
+FROM amazonlinux:2023
 
 LABEL org.opencontainers.image.source="https://github.com/mulecode/tool-set-aws-python"
 LABEL org.opencontainers.image.description="Python 3.14.2 Tool-set"
@@ -19,8 +19,8 @@ RUN yum -y update && \
      gzip \
      gcc \
      libffi-devel \
-     openssl11 \
-     openssl11-devel \
+     openssl  \
+     openssl-devel \
      bzip2-devel \
      libxslt \
      sqlite-devel \
